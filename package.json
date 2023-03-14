@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
-    "client": "npm start --prefix frontend"
+    "client": "npm start --prefix frontend",
+    "frontBuild" : "cd frontend && npm run build && cd .. && npm start"
   },
   "author": "Noam Haber",
   "license": "MIT",
