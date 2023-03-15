@@ -7,7 +7,7 @@
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
-    "frontBuild" : "cd frontend && npm install && npm run build && cd .. && cd backend && npm install && cd .. && npm start"
+    "frontBuild" : "npm install & cd frontend && npm install && npm run build && cd .. && cd backend && npm install && cd .. && npm start"
   },
   "author": "Noam Haber",
   "license": "MIT",
