@@ -7,7 +7,7 @@
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
-    "heroku-postbuild": "cd frontend && npm run build"
+    "heroku-postbuild": "cd frontend && npm install && npm run build"
   },
   "author": "Noam Haber",
   "license": "MIT",
