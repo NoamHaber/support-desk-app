@@ -7,7 +7,7 @@ const Notes = require('../models/notesModel')
 // @route GET /api/notes 
 // @access Private
 const getNotes = asyncHandler(async (req,res) => {
-    let reqId=req.rawHeaders[15].split('/')[4];
+    let reqId=req.rawHeaders[23].split('/')[4];
     const notes = await Notes.find({ticket:reqId});
     res.status(200).json(notes);
 });
